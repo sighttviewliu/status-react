@@ -36,7 +36,7 @@
    :background-color common/color-light-blue})
 
 (def sticky-button-label-style
-  {:color          common/color-white
+  {:color          colors/white
    :font-size      17
    :line-height    20
    :letter-spacing -0.2})

@@ -27,7 +27,8 @@
             [status-im.utils.ethereum.core :as ethereum]
             [status-im.transport.utils :as transport.utils]
             [taoensso.timbre :as log]
-            [reagent.core :as reagent]))
+            [reagent.core :as reagent]
+            [status-im.ui.components.colors :as colors]))
 
 (defn- toolbar [modal? title]
   (let [action (if modal? act/close-white act/back-white)]
@@ -90,7 +91,7 @@
         {:auto-focus             true
          :secure-text-entry      true
          :placeholder            (i18n/label :t/enter-password)
-         :placeholder-text-color components.styles/color-gray4
+         :placeholder-text-color colors/gray
          :on-change-text         #(re-frame/dispatch [:wallet.send/set-password (security/mask-data %)])
          :style                  styles/password
          :accessibility-label    :enter-password-input

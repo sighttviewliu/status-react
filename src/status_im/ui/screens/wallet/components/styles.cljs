@@ -150,7 +150,7 @@
   {:margin-right 10})
 
 (def asset-text
-  {:color styles/color-white})
+  {:color colors/white})
 
 (defstyle container-disabled
   {:border-width     1

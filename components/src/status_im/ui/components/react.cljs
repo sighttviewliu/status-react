@@ -7,7 +7,8 @@
             [status-im.utils.utils :as utils]
             [status-im.utils.platform :as platform]
             [status-im.i18n :as i18n]
-            [status-im.react-native.js-dependencies :as js-dependencies]))
+            [status-im.react-native.js-dependencies :as js-dependencies]
+            [status-im.ui.components.colors :as colors]))
 
 (defn get-react-property [name]
   (if js-dependencies/react-native
@@ -257,20 +258,20 @@
                                        :wallet-settings-assets
                                        :wallet-modal
                                        :wallet-onboarding-setup-modal)
-                                      styles/color-blue4
+                                      colors/blue
 
                                       (:qr-viewer
                                        :recipient-qr-code)
                                       "#2f3031"
 
-                                      styles/color-white)})
+                                      colors/white)})
           bottom-background (when (#{:wallet
                                      :recent-recipients
                                      :wallet-send-assets
                                      :wallet-request-assets
                                      :wallet-settings-assets
                                      :wallet-modal} current-view)
-                              [view {:background-color styles/color-white
+                              [view {:background-color colors/white
                                      :position         :absolute
                                      :bottom           0
                                      :right            0

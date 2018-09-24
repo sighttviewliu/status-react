@@ -5,7 +5,8 @@
             [status-im.ui.components.react :as react]
             [status-im.utils.platform :as platform]
             [status-im.ui.components.styles :as styles]
-            [status-im.react-native.js-dependencies :as js-dependencies])
+            [status-im.react-native.js-dependencies :as js-dependencies]
+            [status-im.ui.components.colors :as colors])
   (:refer-clojure :exclude [use]))
 
 (when-not platform/desktop?
@@ -197,8 +198,8 @@
                          :dark styles/icon-dark-color
                          :gray styles/icon-gray-color
                          :blue styles/color-light-blue
-                         :active styles/color-blue4
-                         :white styles/color-white
+                         :active colors/blue
+                         :white colors/white
                          :red styles/icon-red-color
                          styles/icon-dark-color)
                        (string? color)

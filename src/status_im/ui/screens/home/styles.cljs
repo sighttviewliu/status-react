@@ -110,14 +110,6 @@
    :desktop {:font-size 14}
    :ios     {:font-size 15}})
 
-(def new-messages-container
-  {:min-width          22
-   :height             22
-   :padding-horizontal 8
-   :margin-left        15
-   :background-color   component.styles/new-messages-count-color
-   :border-radius      50})
-
 (defstyle new-messages-text
   {:left       0
    :font-size  12
@@ -128,8 +120,6 @@
 
 (def container
   {:flex 1})
-
-(def native-button-offset 16)
 
 (def create-icon
   {:font-size 20

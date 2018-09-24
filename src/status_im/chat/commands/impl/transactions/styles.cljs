@@ -143,7 +143,7 @@
 (defn command-request-message-view [outgoing]
   {:border-radius    14
    :padding-vertical 4
-   :background-color (if outgoing colors/hawkes-blue styles/color-white)})
+   :background-color (if outgoing colors/hawkes-blue colors/white)})
 
 (defn command-request-header-text [outgoing]
   {:font-size 12

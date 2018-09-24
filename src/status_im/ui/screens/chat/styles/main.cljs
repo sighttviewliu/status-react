@@ -24,7 +24,7 @@
 (def toolbar-view
   {:flex-direction   :row
    :height           56
-   :background-color component.styles/color-white
+   :background-color colors/white
    :elevation        2})
 
 (def action
@@ -54,7 +54,7 @@
    :margin-bottom   2})
 
 (def chat-name-text
-  {:color       component.styles/color-black
+  {:color       colors/black
    :line-height 18
    :font-size   15})
 
@@ -82,7 +82,7 @@
    :android     {:font-size 13}})
 
 (defn actions-wrapper [status-bar-height]
-  {:background-color component.styles/color-white
+  {:background-color colors/white
    :elevation        2
    :position         :absolute
    :top              (+ 55 status-bar-height)
@@ -152,7 +152,7 @@
    :elevation        8})
 
 (defn bottom-info-container [height]
-  {:background-color component.styles/color-white
+  {:background-color colors/white
    :elevation        2
    :position         :absolute
    :bottom           16

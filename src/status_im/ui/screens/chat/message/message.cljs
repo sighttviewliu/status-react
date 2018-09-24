@@ -10,7 +10,6 @@
             [status-im.chat.commands.core :as commands]
             [status-im.chat.commands.receiving :as commands-receiving]
             [status-im.ui.screens.chat.styles.message.message :as style]
-            [status-im.ui.screens.chat.styles.message.command-pill :as pill-style]
             [status-im.ui.screens.chat.photos :as photos]
             [status-im.constants :as constants]
             [status-im.ui.components.chat-icon.screen :as chat-icon.screen]

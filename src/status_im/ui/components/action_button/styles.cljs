@@ -27,13 +27,13 @@
    :font-size      16})
 
 (defstyle actions-list
-  {:background-color styles/color-white
+  {:background-color colors/white
    :android          {:padding-top    8
                       :padding-bottom 8}})
 
 (def action-button-label-disabled
   (merge action-button-label
-         {:color styles/color-gray4}))
+         {:color colors/gray}))
 
 (defstyle action-button-icon-container-disabled
   {:border-radius    50

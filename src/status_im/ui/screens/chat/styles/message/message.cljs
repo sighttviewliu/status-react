@@ -63,7 +63,7 @@
 (defn message-timestamp-placeholder-text [outgoing]
   (assoc message-timestamp
          :color
-         (if outgoing colors/hawkes-blue styles/color-white)))
+         (if outgoing colors/hawkes-blue colors/white)))
 
 (def message-expand-button
   {:color         colors/gray
@@ -109,7 +109,7 @@
    :margin-top     2})
 
 (def delivery-text
-  {:color       styles/color-gray4
+  {:color       colors/gray
    :font-size   12})
 
 (def not-sent-view
@@ -153,7 +153,7 @@
                                 16
                                 4)}
          (when-not (= content-type constants/content-type-emoji)
-           {:background-color (if outgoing colors/hawkes-blue styles/color-white)})
+           {:background-color (if outgoing colors/hawkes-blue colors/white)})
          (when (= content-type constants/content-type-command)
            {:padding-top    12
             :padding-bottom 10})))
@@ -184,17 +184,9 @@
    :text-align  :center
    :color       styles/text2-color})
 
-(defn message-animated-container [height]
-  {:height height})
-
 (defn message-container [window-width]
   {:position :absolute
    :width    window-width})
-
-(defn new-message-container [margin on-top?]
-  {:background-color styles/color-white
-   :margin-bottom    margin
-   :elevation        (if on-top? 6 5)})
 
 (def message-author-name
   {:font-size      12

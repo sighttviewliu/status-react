@@ -1,57 +1,39 @@
 (ns status-im.ui.components.styles
   (:require [status-im.ui.components.colors :as colors]))
 
-(def color-transparent "transparent")
-(def color-blue "#7099e6")
-(def color-blue4 "#4360df") ; colors/blue
-(def color-blue4-transparent "rgba(67, 96, 223, 0.10)")
-(def color-blue6 "#3745AF")
-(def color-blue-transparent "#7099e632")
-(def color-black "#000000")
-(def color-purple "#a187d5")
-(def color-gray-transparent "rgba(0, 0, 0, 0.4)")
-(def color-gray4-transparent "rgba(147, 155, 161, 0.2)")
-(def color-gray "#838c93de")
-(def color-gray2 "#8f838c93")
-(def color-gray3 "#00000040")
-(def color-gray4 "#939ba1")
-(def color-gray5 "#d9dae1")
-(def color-gray6 "#212121")
-(def color-gray7 "#9fa3b4")
-(def color-gray9 "#E9EBEC")
-(def color-dark "#49545d")
-(def color-white "white")
-(def color-white-transparent "#ffffff66")
-(def color-white-transparent-1 "#f1f1f11a")
-(def color-white-transparent-3 "#FFFFFF1A")
-(def color-white-transparent-4 "#FFFFFF33")
-(def color-white-transparent-5 "#FFFFFF8C")
-(def color-light-blue "#628fe3")
-(def color-light-blue-transparent "#628fe333")
-(def color-dark-blue-2 "#1f253f")
-(def color-light-gray "#EEF2F5")
-(def color-light-gray3 "#e8ebec")
-(def color-light-gray6 "#BAC1C6")
-(def color-red "red")
-(def color-red-2 "#d84b4b")
-(def color-light-red "#e86363")
-(def color-green-3 "#44d058")
-(def color-green-3-light "rgba(68, 208, 88, 0.2)")
-(def color-green-4 "#0dcd8d")
+(def color-blue4-transparent "rgba(67, 96, 223, 0.10)") ;;secondary button background
+(def color-blue6 "#3745AF") ;;advanced button background
+(def color-gray3 "#00000040") ;; actions-list-view
+(def color-gray5 "#d9dae1") ;; chat-separator-item
+(def color-gray7 "#9fa3b4") ;; icons gray
+(def color-gray9 "#E9EBEC") ;; asset-icon
+(def color-dark "#49545d") ;; icons dark
+(def color-white-transparent-1 "#f1f1f11a") ;; separator
+(def color-white-transparent-3 "#FFFFFF1A") ;; asset-container
+(def color-white-transparent-4 "#FFFFFF33") ;; border-color-high
+(def color-white-transparent-5 "#FFFFFF8C") ;; wallet-value
+(def color-light-blue "#628fe3") ;; online-color
+(def color-light-blue-transparent "#628fe333") ;; action-button-icon-container
+(def color-dark-blue-2 "#1f253f") ; status-bar-transaction
+(def color-light-gray "#EEF2F5") ; action-button-icon-container-disabled
+(def color-light-gray3 "#e8ebec") ; tabs-container
+(def color-light-gray6 "#BAC1C6") ; browser-icon
+(def color-red "red") ;not-sent-text
+(def color-red-2 "#d84b4b") ; icon-red-color
+(def color-green-4 "#0dcd8d") ; network-icon
+(def separator-color "#0000001f") ; actions-separator
 
-(def color-separator "#D6D6D6")
 
-(def text1-color color-black)
-(def text2-color color-gray)
-(def text4-color color-gray4)
+(def text1-color :black)
+(def text2-color :gray);color-gray)
+(def text4-color colors/gray) ;color-gray4)
 (def icon-dark-color color-dark)
 (def icon-gray-color color-gray7)
 (def icon-red-color color-red-2)
 (def online-color color-light-blue)
-(def new-messages-count-color color-blue-transparent)
 (def chat-background color-light-gray)
-(def separator-color "#0000001f")
-(def default-chat-color color-purple)
+
+(def default-chat-color :purpule);color-purple)
 
 (defn random-chat-color []
   (rand-nth colors/chat-colors))
@@ -115,7 +97,7 @@
    :bottom   0})
 
 (def main-container
-  {:background-color color-white
+  {:background-color colors/white
    :flex             1})
 
 (def border-radius 8)

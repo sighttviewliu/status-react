@@ -1,7 +1,8 @@
 (ns status-im.ui.components.button.styles
   (:require-macros [status-im.utils.styles :refer [defstyle defnstyle]])
   (:require [status-im.ui.components.styles :as styles]
-            [status-im.utils.platform :as platform]))
+            [status-im.utils.platform :as platform]
+            [status-im.ui.components.colors :as colors]))
 
 (def border-color styles/color-white-transparent-3)
 (def border-color-high styles/color-white-transparent-4)
@@ -39,7 +40,7 @@
 
 (defstyle button-text
   {:font-weight        :normal
-   :color              styles/color-white
+   :color              colors/white
    :padding-horizontal 16
    :android            {:font-size        14
                         :padding-vertical 10
@@ -61,13 +62,13 @@
 (def primary-button
   (merge
    button-borders
-   {:background-color styles/color-blue4}))
+   {:background-color colors/blue}))
 
-(def primary-button-text {:color styles/color-white})
+(def primary-button-text {:color colors/white})
 
 (def secondary-button
   (merge
    button-borders
    {:background-color styles/color-blue4-transparent}))
 
-(def secondary-button-text {:color styles/color-blue4})
+(def secondary-button-text {:color colors/blue})
